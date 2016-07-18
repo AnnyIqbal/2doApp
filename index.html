@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> To Do App </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!--To ensure proper rendering and touch zooming-->
+         
+        <!--firebase cdn for deployment-->
+        <script src='https://cdn.firebase.com/js/client/2.4.2/firebase.js'>
+            var Firebase = require("firebase");
+        </script>
+
+        <style>
+            body {
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+                background-color: plum;
+            }
+            h1 {
+                font-family: "Times New Roman", Times, sans-serif;
+            }
+            #task {
+                padding: 5px;
+            }
+            #task:hover {
+                background-color: lightyellow;
+            }
+            #task:focus {
+                border-color: slateblue;
+                border-style: groove;
+                border-width: 2px;
+                cursor: pointer;
+            }
+            table {
+                margin-right: auto;
+                margin-left: auto;
+            }
+            tr {
+                background-color: palegoldenrod;
+            }
+            td {
+                text-align: center;
+                font-family: Verdana, Helvetica, Arial, serif;
+                font-weight: lighter;
+                padding: 12px;
+                border-style: inset;
+                border-color: goldenrod;
+                border-width: 2px;
+                border-radius: 50px;
+            }
+            #add {
+                height: 29px;
+                width: 29px;
+            }
+           
+        </style> 
+    </head>
+    <script>
+       // var myDataRef = new Firebase('https://annyportfolio.firebaseio.com/');  // firebase hosting url
+       var job, newBox;
+        function addTask(){
+            job = document.getElementById("task").value; // input value assigned to variable 'job'
+            newBox = "<tr>" +
+                        "<td>" + job + "</td>" +
+                        // "<td> <button onclick='dlt(this);'>x</button> </td>" + // bootstrap ka danger button use kro circular ya cross wala glyphicon
+                        "<td onclick='dlt(this);' style='border-radius:100%;'>X</td>" +
+                    "</tr>";    // added new row to table with the input value
+            document.getElementById("taskList").innerHTML += newBox; //adding new task to list
+            document.getElementById("task").value = ''; // removing the filled text field
+        }
+
+        function dlt(z){
+//            alert(z.parentNode.nextSibling.innerHTML); // finally got it, the <td> to be dltd
+//            alert(z.parentNode.parentNode); //<tr> uska parent node mil gya
+            z.parentNode.parentNode.innerHTML = ''; //yahoo urra diaaaa hahahaha
+        }
+    </script>
+    <body class="scaffolding.less" data-spy="scroll" data-target=".navbar" data-offset="50">
+        <h1> To Do App </h1>
+        <form method="post" action="">
+            <input type="text" name="task" id="task" placeholder="Add New Task" />
+            <input type="button" id="add" value="+" onclick="addTask();" />
+        </form>
+        <h1> Task List : </h1>
+        <table id="taskList"> </table>
+    </body>
+</html>
