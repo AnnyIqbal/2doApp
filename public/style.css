@@ -1,20 +1,28 @@
-﻿body {
+﻿            body {
                 text-align: center;
                 margin-left: auto;
                 margin-right: auto;
-                background-color: plum;
+                background-color: #9137FF;
             }
             h1 {
                 font-family: "Times New Roman", Times, sans-serif;
+                background-color: #491B7F;
+                color: white;
+                width: 500px;
+                margin: 50px auto;
+                padding: 5px;
+                border: 2px solid #BB83FF;
             }
             #task {
-                padding: 5px;
+                padding: 10px;
+                width: 450px;
             }
             #task:hover {
-                background-color: lightyellow;
+                border-radius: 25px;
+                border-style: outset;
             }
             #task:focus {
-                border-color: slateblue;
+                border-color: #9137FF;
                 border-style: groove;
                 border-width: 2px;
                 cursor: pointer;
@@ -24,20 +32,25 @@
                 margin-left: auto;
             }
             tr {
-                background-color: palegoldenrod;
+                background-color: #742CCC;
             }
             td {
                 text-align: center;
                 font-family: Verdana, Helvetica, Arial, serif;
                 font-weight: lighter;
                 padding: 12px;
-                border-style: inset;
-                border-color: goldenrod;
+                border-style: ridge;
+                border-color:#BB83FF;
                 border-width: 2px;
+                color: white;
+            }
+            td:hover {
                 border-radius: 50px;
+                font-style: oblique;
+
             }
             #add {
-                height: 29px;
-                width: 29px;
+                height: 44px;
+                width: 44px;
             }
            

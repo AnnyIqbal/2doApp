@@ -9,18 +9,30 @@
         <script src='https://cdn.firebase.com/js/client/2.4.2/firebase.js'>
             var Firebase = require("firebase");
         </script>
+        
+        <!-- bootstrap cdn -->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+        <!-- bootstrap cdn links ended -->
+        
+        <!--<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>-->
 
         <!--typescript's generated javascript file is linked-->
         <script src='script.js'> </script>
         
         <!--linking css file-->
         <link href="style.css" rel="stylesheet" type="text/css" /> 
+    
     </head>
+
     <body class="scaffolding.less" data-spy="scroll" data-target=".navbar" data-offset="50">
         <h1> To Do App </h1>
         <form method="post" action="">
             <input type="text" name="task" id="task" placeholder="Add New Task" />
-            <input type="button" id="add" value="+" onclick="addTask();" />
+            <input type="button" id="add" class="btn btn-success" value="+" onclick="addTask();" />
         </form>
         <h1> Task List : </h1>
         <table id="taskList"> </table>
