@@ -1,2 +1,6 @@
 # 2doApp
-Assignment 1 of typescript
+TypeScript Assignment # 1
+
+[Demo] : (https://doapp-11a1f.firebaseapp.com/)
+
+HTML, CSS, TypeScript
