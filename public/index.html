@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> To Do App </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!--To ensure proper rendering and touch zooming-->
+         
+        <!--firebase cdn for deployment-->
+        <script src='https://cdn.firebase.com/js/client/2.4.2/firebase.js'>
+            var Firebase = require("firebase");
+        </script>
+
+        <!--typescript's generated javascript file is linked-->
+        <script src='script.js'> </script>
+        
+        <!--linking css file-->
+        <link href="style.css" rel="stylesheet" type="text/css" /> 
+    </head>
+    <body class="scaffolding.less" data-spy="scroll" data-target=".navbar" data-offset="50">
+        <h1> To Do App </h1>
+        <form method="post" action="">
+            <input type="text" name="task" id="task" placeholder="Add New Task" />
+            <input type="button" id="add" value="+" onclick="addTask();" />
+        </form>
+        <h1> Task List : </h1>
+        <table id="taskList"> </table>
+    </body>
+</html>
