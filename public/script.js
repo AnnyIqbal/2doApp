@@ -1,4 +1,4 @@
-var job, newBox; //job: string, newBox: string; typescript ki file ext is .ts but yahan dom use krne k lie script must be in this file link ni krwa skti
+var job, newBox; //typescript ki file ext is .ts but yahan dom use krne k lie script must be in this file link ni krwa skti
 function addTask() {
     job = document.getElementById("task").value; // input value assigned to variable 'job'
     newBox = "<tr>" +
