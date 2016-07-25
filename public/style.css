@@ -53,4 +53,30 @@
                 height: 44px;
                 width: 44px;
             }
-           
+           /*media queries*/
+           @media screen and (max-width : 760px) {      /*for devices smaller than 760px width*/
+               body {
+                   height: auto;
+                   width: 100%;
+                   margin: 0 auto;
+               }
+               form, h1, table {
+                   width: 80%;
+                   margin-left: auto;
+                   margin-right: auto;
+                   height: auto;
+               }
+               #add {
+                   width: 20%;
+                   height: 20%;
+               }
+               #task {
+                   width: 60%;
+               }
+           }
+           @media screen and (min-width: 1000px) {     /* for larger devices 1000px and more */
+            body {
+                width: 1000px;
+                margin: 0 auto;
+            }
+        }
