@@ -1,8 +1,7 @@
 function enableButton() {
-    var input = document.getElementById("task").value; //the input box's value
     document.getElementById("add").removeAttribute("disabled"); // enable the button by removing the disabled attribute
 }
-var job, newBox; //chk htmlinputelement type is ok or not
+var job, newBox;
 function addTask() {
     job = document.getElementById("task").value; // input value assigned to variable 'job'
     newBox = "<tr>" +
