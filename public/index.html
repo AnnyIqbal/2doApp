@@ -34,8 +34,9 @@
             <h1> To Do App </h1>
             <form method="post" action="">
                 <input type="text" name="task" id="task" placeholder="Add New Task" autofocus oninput="enableButton();" />
-                <!--autofocus attribute is used to place cursor in the input field when the page loads-->
-                <!-- oninput is a js event used on input fields and activates a function when input is typed-->
+                <!--onkeyup: Execute a JavaScript when a user releases a key-->
+                <!--autofocus: attribute is used to place cursor in the input field when the page loads-->
+                <!-- oninput: is a js event used on input fields and activates a function when input is typed-->
                 <button type="button" id="add" class="btn btn-success" disabled onclick="addTask();">+</button>
                 <!--<input type="button" id="add" class="btn btn-success" disabled="diasbled" value="+" onclick="addTask();" />-->
             </form>

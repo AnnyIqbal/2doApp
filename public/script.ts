@@ -1,9 +1,14 @@
-//var job: HTMLInputElement = document.getElementById("task").value; // input value assigned to variable 'job'
+// var job: HTMLInputElement = document.getElementById("task").value; // input value assigned to variable 'job'
 
 function enableButton() {
-    // if(job.toString() != '') {// if input is empty
-        document.getElementById("add").removeAttribute("disabled"); // enable the button by removing the disabled attribute
-    //}
+         document.getElementById("add").removeAttribute("disabled"); // enable the button by removing the disabled attribute
+// how to disable button when an input is erased to prevent the button from being clicked
+    // if (job.toString() === "") {
+    //     alert("fill the input");
+    // } 
+    // else {
+    //     document.getElementById("add").removeAttribute("disabled");
+    // } 
 }
 
 var job: HTMLInputElement, newBox: string; 
