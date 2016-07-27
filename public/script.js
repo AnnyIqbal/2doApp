@@ -1,3 +1,4 @@
+// this file alerts and turns the border red when user erases input and tries to enter it
 function enableButton() {
     document.getElementById("add").removeAttribute("disabled");
 }

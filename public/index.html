@@ -28,18 +28,18 @@
     <body class="scaffolding.less" data-spy="scroll" data-target=".navbar" data-offset="50">
         <div class = "container-fluid" id="body">
             <h1> To Do App </h1>
-            <form method="post" action="" onsubmit="return validateIfNotBlank();">
+            <form method="post" action="javascript:void(0)">
                 <input type="text" name="task" id="task" placeholder="Add New Task" autofocus oninput="enableButton();" />
                 <!--onkeyup: Execute a JavaScript when a user releases a key-->
                 <!--autofocus: attribute is used to place cursor in the input field when the page loads-->
                 <!-- oninput: is a js event used on input fields and activates a function when input is typed-->
-                <!--<button type="button" id="add" class="btn btn-success" disabled onclick="addTask();">+</button>-->
-                <input type="submit" id="add" class="btn btn-success" disabled="diasbled" value="+" onclick="addTask();" />
+                <button type="button" id="add" class="btn btn-success" disabled onclick="addTask();">+</button>
+                <!--<input type="submit" id="add" class="btn btn-success" disabled="diasbled" value="+" onclick="addTask();" />-->
             </form>
             <h1> Task List : </h1>
             <table id="taskList"> </table>
         </div>
         <!--typescript's generated javascript file is linked-->
-        <script src='script.js'> </script>
+        <script src='new.js'> </script>
     </body>
 </html>
